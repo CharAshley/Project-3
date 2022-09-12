@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Text Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+  }
+
+h2, .form-title, .form-title-newsletter {
+    font-size: 1.25em;
+    font-weight: bold;
+}  
+
+.intro-text {
+    color: grey;
+    font-size: 0.8em;
+    margin: 7px auto 40px;
+    width: 80%;
+}
+
+h2, p {
+    text-align: center;
+  }
+
+label {
+    font-size: 0.85em;
+  }
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+    color: rgb(173, 173, 173);
+    font-size: 0.9em;
+    font-family: 'Lora Medium 500 Italic', serif;
+    text-align: right;
+  }
+
+#number::placeholder,
+#streetaddress::placeholder,
+#city::placeholder,
+#zipcode::placeholder,
+#socialmediahandles::placeholder {
+  text-align: left;
+  color: rgb(209, 205, 205);
+} 
+
+  input[type="text"],
+  input[type="email"] {
+    text-align: left;
+  }
+
+footer {
+  font-size: 0.75em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: grey;
+}
+
+/* Layout/Visual Styles */
+
+header {
+    background-color:black;
+    height: 65px;
+    padding-top: 25px;
+}
+
+form {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 0px 10px 0px 10px;
+  }
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    width: 100%;
+    max-width:500px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+.form-title,
+.contactinformation {
+  margin-bottom: 20px;
+}
+
+textarea[type="text"] {
+  margin-bottom:0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  margin-top:5px;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+input:hover,
+textarea:hover,
+select:hover{
+  background-color: rgb(165, 171, 171);
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  background-color:rgb(156, 243, 243);
+  transition: background-color 1.5s ease;
+}
+
+
+input#zipcode {
+  display: block;
+  width:50%;
+}
+
+
+#newsletter_label,
+#newsletter_format,
+#other_topics{
+    display: block;
+    margin-bottom:8px;
+}
+
+#JavascriptNews, #newsletterformat_plaintext {
+  margin-bottom: 25px;
+}
+
+textarea {
+  height: 95px;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(29, 156, 143);
+  color: white;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  height: 50px;
+  border: none;
+  font-size: 1.1em;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+hr.top {
+  border: 2px solid black;
+  margin-bottom:10px;
+  margin: 0;
+}
+
+hr.bottom {
+  border: 1px solid black;
+  margin-top:3px;
+}
+
+hr {
+  width:100%;
+  max-width: 500px;
+}
+
+#HTMLNews,
+#CSSNews,
+#newsletterformat_HTML {
+  margin-bottom:10px;
+}
+
+input#HTMLNews,
+input#CSSNews,
+input#JavascriptNews,
+input#newsletterformat_HTML,
+input#newsletterformat_plaintext{
+    margin-right: 10px;
+}
+
+
+
+#Newsletter {
+  background-color: rgb(219, 248, 245);
+  margin-bottom:20px;
+  height:fit-content;
+  padding: 10px 10px 10px 10px;
+}
+
+.form-title-newsletter {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+@media (min-width:768px) {
+ 
+.contactinformation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea#streetaddress, 
+    textarea#socialmediahandles,
+    select {
+        margin-right: auto;
+        width: 375px;
+    }
+
+label.contactlabel{
+    width: 125px;
+}
+
+ 
+.intro-text{
+  width:100%;
+}
+
+form {
+  padding: 0px;
+}
+
+input#zipcode {
+  width:94px;
+}
+
+}
